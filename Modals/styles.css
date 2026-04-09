@@ -1,0 +1,137 @@
+/* BODY CENTER */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./footer-bg.jpg') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+}
+
+/* CENTER BUTTON */
+#openModalBtn {
+    padding: 12px 20px;
+    background: #6e48aa;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* OVERLAY */
+.overlay,
+.modal {
+    position: fixed;
+}
+
+/* SMOOTH OVERLAY ANIMATION */
+.overlay {
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+}
+
+.overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay.closed {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* MODAL */
+.modal {
+    width: 380px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 0 40px 40px;
+
+    /* PERFECT CENTER */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.8s ease;
+}
+
+/* OPEN STATE */
+.modal.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* CLOSE STATE */
+.modal.closed {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.7);
+}
+
+/* HEADER */
+.modal header {
+    background: linear-gradient(90deg, #9d50bb, #6e48aa);
+    margin: -60px 0 20px;
+    border-radius: 12px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+    color: white;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Focus state */
+input:focus {
+    border: 1px solid #6e48aa;
+    outline: none;
+    color: #6e48aa;
+}
+
+/* BUTTON */
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    background: #6e48aa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer {
+    position: fixed;   
+    bottom: 0;         
+    left: 50%;         
+    transform: translateX(-50%);  
+    width: 100%;       
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+}

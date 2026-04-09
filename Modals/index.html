@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- OPEN BUTTON (missing tha) -->
+    <button id="openModalBtn">Open Modal</button>
+
+    <!-- OVERLAY -->
+    <div id="modalOverlay" class="overlay default"></div>
+
+    <!-- MODAL -->
+    <div id="modalDialog" class="modal default">
+        <header>
+            <h2>Sign Up</h2>
+            <h3>Try Hologram today.</h3>
+        </header>
+
+        <form>
+            <input type="email" placeholder="Email" autocomplete="off">
+            <input type="password" placeholder="Password">
+
+            <button class="signup-button" id="signupBtn" type="button">
+                Sign up free →
+            </button>
+        </form>
+
+        <p>No credit card information required</p>
+    </div>
+
+    <footer>
+        <hr style="margin: 0 40px 0 40px;">
+        <p>Designed and Developed by Aditya Verma</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
