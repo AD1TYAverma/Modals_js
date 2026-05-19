@@ -4,11 +4,11 @@ This project demonstrates the use of modals (popup windows) using Bootstrap. Mod
 
 It improves user interaction by providing a smooth and responsive popup interface.
 
-## Technologies Used
+# Technologies Used
 - HTML
 - CSS
 - Bootstrap
 - JavaScript
 
-## Author
+# Author
 Aditya Verma
